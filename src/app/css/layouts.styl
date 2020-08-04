@@ -1,0 +1,139 @@
+// Основная тема
+#page[layout=main]
+  //header
+  //  background-color: $header-bg
+  //  & .header-content
+  //    display flex
+  //    align-items center
+  //    & *
+  //      color white
+  //      font-size: 30px
+
+  .announcement
+    &__body
+        height: 100%
+        width: 100%
+        max-width: 1288px
+        margin: 0 auto
+        @media screen and (max-width 1270px)
+          max-width 970px
+      .announcement__main
+        background: #F7F1FE
+        padding: 32px 56px
+        border-radius: 8px
+        display: flex
+        justify-content: space-between
+        @media screen and (max-width 992px)
+          flex-wrap wrap
+        @media screen and (max-width 1270px)
+          padding 32px 16px
+        @media screen and (max-width 414px)
+          padding: 32px 8px
+        .announcement__item
+          width: 360px
+          @media screen and (max-width 1270px)
+            width: 299px
+          @media screen and (max-width 670px)
+            margin: 0 auto
+            width: 320px
+          @media screen and (max-width 414px)
+            width: 100%
+          h3
+            color #F42F3A
+            font-size 18px
+            font-family montserratblack
+            text-transform uppercase
+            letter-spacing: 1.5pxs
+          .img__description
+            display block
+            margin-top: 5px
+            margin-bottom: 30px
+            img
+              @media screen and (max-width 1270px)
+                width: 100%
+            p
+              font-family: montserratbold
+              font-size: 18px
+              color: #000
+              line-height: 24px
+              margin-top: 10px
+          .small_link
+            display flex
+            align-items: center
+            p
+              font-size: 16px
+              font-family Georgia
+              line-height 24px
+              padding-left: 20px
+          .small_link + .small_link
+            margin-top 30px
+        .announcement__item:last-child
+          @media screen and (max-width 992px)
+            margin-top 52px
+          @media screen and (max-width 670px)
+            margin-top 0
+        .announcement__item + .announcement__item
+          @media screen and (max-width 670px)
+            margin-top 40px
+
+
+
+
+  //footer
+  //  background-color: $footer-bg
+  //  & .footer-content
+  //    display flex
+  //    align-items center
+  //    & *
+  //      color white
+  //      font-size: 30px
+
+
+
+// Основная тема
+//#page[layout=dark]
+//  header
+//    background-color: $dark_header-bg
+//    & .header-content
+//      display flex
+//      align-items center
+//      & *
+//        color white
+//        font-size: 30px
+//  .content-container
+//    background-color: $dark_content-bg
+//    & .content
+//      & *
+//        color #333333
+//  footer
+//    background-color: $dark_footer-bg
+//    & .footer-content
+//      display flex
+//      align-items center
+//      & *
+//        color white
+//        font-size: 30px
+//
+//// Другие темы
+//#page[layout=theme_name]
+//  header
+//    background-color: $dark_header-bg
+//    & .header-content
+//      display flex
+//      align-items center
+//      & *
+//        color white
+//        font-size: 30px
+//  .content-container
+//    background-color: $dark_content-bg
+//    & .content
+//      & *
+//        color #333333
+//  footer
+//    background-color: $dark_footer-bg
+//    & .footer-content
+//      display flex
+//      align-items center
+//      & *
+//        color white
+//        font-size: 30px

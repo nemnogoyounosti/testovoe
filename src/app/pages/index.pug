@@ -1,0 +1,68 @@
+extends ../layout/main_layout
+
+block content
+    .announcement
+        .announcement__body
+            .announcement__main
+                .announcement__item
+                   h3 Он и Она
+                   .img__description
+                       +img('img/link_1.png')
+                       p 10 звезд, которые любили простых парней, но замуж за них не пошли
+                   .small_link
+                       +img('img/small-link_1.png')
+                       p Кино и реальность: как бы развивались отношения на самом деле
+                   .small_link
+                        +img('img/small-link_2.png')
+                        p 7 привычек, которые важно воспитать в себе до замужества
+                .announcement__item
+                    h3 Дети
+                    .img__description
+                        +img('img/link_2.png')
+                        p И тату, и пирсинг: эксперименты со внешностью звездных детей
+                    .small_link
+                        +img('img/small-link_3.png')
+                        p 5 навыков и качеств, которых гаджеты лишили наших детей
+                    .small_link
+                        +img('img/small-link_4.png')
+                        p 7 самых вредных привычек молодых родителей
+                .announcement__item
+                    h3 Стиль жизни
+                    .img__description
+                        +img('img/link_3.png')
+                        p Стоит ли отказываться от социальных сетей на неделю
+                    .small_link
+                        +img('img/small-link_5.png')
+                        p В России установили один из самых романтичных рекордов
+                    .small_link
+                        +img('img/small-link_6.png')
+                        p Что подарить мужчине, чтобы ему это понравилось: 100+ идей
+
+    //div Page content
+    //
+    //p Extends UI
+    //+phone('8 (999) 888-77-66')
+    //br
+    //+email('test@mail.net')
+    //div(style="max-width: 150px;")
+    //    +img('img/fig.jpg')(style="width: 100%; object-fit: cover;")
+    //
+    //
+    //br
+    //p.test Custom UI
+    //+burger('no')
+    //br
+    //+arrow('right')
+    //
+    //br
+    //p.show-float-container Show float container
+    //+float-container('down')
+    //
+    //div.ru-rf Responsive Unit + Responsive Font + Responsive Var
+    //
+    //
+    //div(modal-id="#modal-any-id" close-btn-id=".close") Open modal
+    //
+    //+modal-window#modal-any-id
+    //    div.close X
+    //    div Это модальное окно
